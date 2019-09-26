@@ -10,4 +10,7 @@ func newfunc() {
 
 func main() {
 	print("here is the golang script output")
+	return
+	print("this is unreachable code")
+
 }
