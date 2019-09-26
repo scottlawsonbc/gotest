@@ -11,5 +11,5 @@ func newfunc() {
 func main() {
 	print("here is the golang script output")
 	return
-
+	print("unreachable code is here")
 }
