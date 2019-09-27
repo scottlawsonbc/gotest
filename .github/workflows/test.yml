@@ -19,7 +19,6 @@ jobs:
       run: |
         go vet ./... | reviewdog -f=govet -reporter=github-pr-review
     - name: golangci-lint
-        uses: reviewdog/action-golangci-lint@v1
-        # uses: docker://reviewdog/action-golangci-lint:v1 # pre-build docker image
-        with:
-          github_token: ${{ secrets.github_token }}
+      uses: reviewdog/action-golangci-lint@v1
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
