@@ -18,3 +18,8 @@ jobs:
         REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         go vet ./... | reviewdog -f=govet -reporter=github-pr-review
+    - name: golangci-lint
+        uses: reviewdog/action-golangci-lint@v1
+        # uses: docker://reviewdog/action-golangci-lint:v1 # pre-build docker image
+        with:
+          github_token: ${{ secrets.github_token }}
