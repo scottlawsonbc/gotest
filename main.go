@@ -4,8 +4,9 @@ func multiply(a, b int) int {
 	return a * b
 }
 
-func newfunc() {
-
+func newfunc(x int) int {
+	x += 1
+	return x
 }
 
 func main() {
