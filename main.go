@@ -1,6 +1,9 @@
 package main
 
+import "https://github.com/google/uuid"
+
 func multiply(a, b int) int {
+	print(uuid.New())
 	return a * b
 }
 
