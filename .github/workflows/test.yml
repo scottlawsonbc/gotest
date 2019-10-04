@@ -7,8 +7,7 @@ jobs:
     steps:
       - name: Check out code into the Go module directory
         uses: actions/checkout@v
-      - name: go get
-        run: go get .
+      - run: go get -u github.com/google/uuid
       - name: golangci-lint
         uses: reviewdog/action-golangci-lint@v1
         with:
