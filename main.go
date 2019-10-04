@@ -6,7 +6,7 @@ func multiply(a, b int) int {
 	print(uuid.New())
 	return a * b
 }
-
+// comment
 func newfunc(x int) int {
 	x += 1
 	return x
